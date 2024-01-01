@@ -35,3 +35,29 @@ let myObj ={
 const myFunc = function(){
     console.log("Hello World")
 }
+
+// ////////////////////////////////////////////////////////////////////////
+
+// Stack (Primitive data) and Heap (Reference data)
+
+// The stack and heap are two different memory spaces used for storing data.
+
+let myName = "Zahid Sheikh";
+
+let anotherName = myName;
+
+anotherName = "Zahid Rashid Sheikh";
+
+console.log(myName)
+console.log(anotherName);
+
+let userOne ={
+    email:"user@zmail.com",
+    upi: "user@zbl"
+}
+
+let userTwo = userOne;
+
+userTwo.email = "user2@kmail.com";
+console.log(userOne.email);
+console.log(userTwo.email);

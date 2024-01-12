@@ -19,3 +19,5 @@ const regularUser = {
 }
 
 // console.log(regularUser.fullname.userFullName.firstName)
+
+// Objects are most important features in JS

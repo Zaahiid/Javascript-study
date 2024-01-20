@@ -26,3 +26,19 @@ if (balance < 500) {
 } else {
   console.log(" Balance is grater than 900");
 }
+
+// Checking Multiple Conditions
+
+const userLoggedIn = true;
+const hasDebitCard = true;
+
+if (userLoggedIn && hasDebitCard){
+    console.log("Can buy the product")
+}
+
+const userLoggedInEmail = true;
+const userLoggedInGoogle = true;
+if (userLoggedInEmail ||  userLoggedInGoogle
+){
+    console.log("Can enter the portal")
+}

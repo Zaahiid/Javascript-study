@@ -1,8 +1,8 @@
 const userEmail = [];
 if (userEmail) {
-    console.log("Got an email")
+  console.log("Got an email");
 } else {
-    console.log("Don't have an email")
+  console.log("Don't have an email");
 }
 
 // Falsy values
@@ -19,6 +19,18 @@ if (userEmail) {
 
 const emptyObj = {};
 
-if (Object.keys(emptyObj).length === 0){
-    console.log("Object is Empty")
+if (Object.keys(emptyObj).length === 0) {
+  console.log("Object is Empty");
 }
+
+
+// Nullish Coalescing Operator (??)
+let val1;
+
+// val1 = 5 ?? 10;
+// val1 = null ?? 10;
+// val1 = undefined ?? 20;
+// val1 = null ?? 10 ?? 20;
+val1 = null ?? undefined ?? 30;
+
+console.log(val1);

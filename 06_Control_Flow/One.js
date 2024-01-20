@@ -9,9 +9,20 @@ if (temperature < 50) {
 // Comparison operators
 // <, >, <=, >=, ==, !=, ===, !==
 
-const balance = 1000;
-if (balance > 500) console.log("Balance is greater than 500");
+// const balance = 1000;
+// if (balance > 500) console.log("Balance is greater than 500");
 // Implicit Scope
 
 
+// Multiple if statements
+// const balance = 40;
 
+if (balance < 500) {
+  console.log("Balance is less than 500");
+} else if (balance < 750) {
+  console.log("Balance is less than  750");
+} else if (balance < 900) {
+  console.log("Balance is less than 900");
+} else {
+  console.log(" Balance is grater than 900");
+}

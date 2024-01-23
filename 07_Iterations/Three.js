@@ -15,3 +15,17 @@ for (greet of greetings) {
   }
   console.log(`The char is ${greet}`);
 }
+
+// Maps
+
+const map = new Map();
+map.set("IN", "India");
+map.set("SA", "Saudi Arabia");
+map.set("EN", "England");
+map.set("IN", "India");
+
+console.log(map);
+
+for ([key, values] of map) {
+  console.log(key, ":-", values);
+}

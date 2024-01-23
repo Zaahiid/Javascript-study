@@ -25,3 +25,24 @@ coding.forEach(printMe);
 coding.forEach((item, index, arr) => {
   console.log(item, index, arr);
 });
+
+// with objects
+
+const myCoding = [
+  {
+    languageName: "Javascript",
+    fileExtension: "js",
+  },
+  {
+    languageName: "Java",
+    fileExtension: "java",
+  },
+  {
+    languageName: "Python",
+    fileExtension: "py",
+  },
+];
+
+myCoding.forEach((item) => {
+  console.log(item.languageName);
+});

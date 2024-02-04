@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM L-34</title>
+  </head>
+  <body style="background-color: #212121; color: white">
+    <ul class="language">
+      <li>Javascript</li>
+    </ul>
+  </body>
+  <script>
+    function addLanguage(langName) {
+      const li = document.createElement("li");
+      li.innerHTML = `${langName}`;
+      document.querySelector(".language").append(li);
+    }
+
+    addLanguage("python");
+    addLanguage("Typescript");
+
+    // Following is the optimize way of doing task as it does not traversing of DOM
+
+    function optiLanguage(langName) {
+      const li = document.createElement("li");
+      li.appendChild(document.createTextNode(langName));
+      document.querySelector(".language").appendChild(li);
+    }
+
+    optiLanguage("Golang");
+  </script>
+</html>
